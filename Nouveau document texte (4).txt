@@ -1,0 +1,68 @@
+function read_size (): integer
+var 
+n:integer;
+begin
+repeat
+read(n);
+until(n<=0 or n>100);
+return (n);
+end
+
+procedure read_element (n:integer,var t1:array_of integer[100],t2:array_of integer[100])
+var 
+i:integer;
+begin
+for i from 0 to n-1 do
+read (t1[i]);
+for i from 0 to n-1 do
+read(t2[i]);
+end
+
+procedure calcul_ps (n:integer,var t1:array_of integer[100],t2:array_of integer[100])
+var 
+i:integer;
+ps:=0:integer;
+begin
+for i from 0 to n-1 do
+read (t1[i]);
+for i from 0 to n -1do
+read(t2[i]);
+ps:=ps+(t1[i]*t2[i])
+write(ps);
+end
+
+function verif_orthogonal (t1,t2): boleen
+var 
+ortogonal:=0:integer;
+begin
+read_element (n:integer,var t1:array_of integer[100],t2:array_of integer[100])
+ortogonal:=t1[i]*t2[i]
+if(ortogonal=0)then
+  return (true);  
+elseif (ortogonal <> 0)then
+return(false);
+endif;
+end
+
+
+
+
+
+Algorithm produitscalaire
+var
+v: array_of integer[100];
+u: array_of integer[100];
+i,n:integer;
+ortogonal:boleen;
+
+
+begin
+//read size of elements
+n:=read_size ();
+//read elements
+read_element(n,v,u);
+//calcul produit scalaire
+procedure calcul_ps (n:integer,var t1:array_of integer[100],t2:array_of integer[100]);
+//verification
+ortogonal:=verif_orthogonal (t1,t2);
+end
